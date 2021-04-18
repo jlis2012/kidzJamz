@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="@string/txtWelcome"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#00BCD4"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="416dp"
+        android:contentDescription="@string/kidsMusic"
+        app:layout_constraintEnd_toEndOf="@id/btnPreschool"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome"
+        app:srcCompat="@drawable/kidsmusic" />
+
+    <Button
+        android:id="@+id/btnPreschool"
+        android:layout_width="380dp"
+        android:layout_height="67dp"
+        android:text="@string/goPreschool"
+        app:layout_constraintEnd_toEndOf="@id/btnNaptime"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnDisney"
+        android:layout_width="379dp"
+        android:layout_height="59dp"
+        android:text="@string/goPopDisney"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNaptime" />
+
+    <Button
+        android:id="@+id/btnNaptime"
+        android:layout_width="380dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/goNaptime"
+        app:layout_constraintEnd_toEndOf="@+id/btnDisney"
+        app:layout_constraintTop_toBottomOf="@+id/btnPreschool" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

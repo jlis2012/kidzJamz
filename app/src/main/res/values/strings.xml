@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">KidzJamz</string>
+    <string name="txtWelcome">Welcome to Kidz Jamz!</string>
+    <string name="goPreschool">Top Preschool Song</string>
+    <string name="goNaptime">Naptime Playlist</string>
+    <string name="goPopDisney">Popular Disney Songs</string>
+   <!-- <string name="txtTopPreschool">Checkout the Top 10 Preschool Songs!</string>-->
+    <!--<string name="btnStart">Start</string>-->
+    <!--<string name="btnPause">Pause</string>
+    <string name="btnStop">Stop</string>-->
+    <string name="todo" />
+    <string name="kidsMusic" />
+</resources>
