@@ -3,8 +3,8 @@
     <string name="txtWelcome">Welcome to Kidz Jamz!</string>
     <string name="goPreschool">Top Preschool Song</string>
     <string name="goNaptime">Naptime Playlist</string>
-    <string name="goPopDisney">Popular Disney Songs</string>
-   <!-- <string name="txtTopPreschool">Checkout the Top 10 Preschool Songs!</string>-->
+    <string name="goPopDisney">Popular Disney Song</string>
+    <!-- <string name="txtTopPreschool">Checkout the Top 10 Preschool Songs!</string>-->
     <!--<string name="btnStart">Start</string>-->
     <!--<string name="btnPause">Pause</string>
     <string name="btnStop">Stop</string>-->
