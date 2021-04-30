@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -12,48 +13,66 @@
         android:id="@+id/imageView"
         android:layout_width="330dp"
         android:layout_height="453dp"
+        android:layout_margin="30dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/moana_promo"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_width="789dp"
-        android:layout_height="152dp"
-        android:layout_margin="20dp"
-        android:background="#00FAFBFB"
-        android:padding="10dp">
+    <Button
+        android:id="@+id/start"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:drawable/ic_media_play"
+        android:onClick="musicplay"
+        app:layout_constraintEnd_toStartOf="@+id/stop"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        <Button
-            android:id="@+id/start"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="100dp"
-            android:layout_height="85dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="-95dp"
-            android:layout_marginRight="152dp"
-            android:background="@android:drawable/ic_media_play"
-            android:onClick="musicplay" />
+    <Button
+        android:id="@+id/pause"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/ic_media_pause"
+        android:onClick="musicpause"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        <Button
-            android:id="@+id/pause"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="100dp"
-            android:layout_height="85dp"
-            android:layout_marginStart="90dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginTop="4dp"
-            android:background="@android:drawable/ic_media_pause"
-            android:onClick="musicpause" />
+    <Button
+        android:id="@+id/stop"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:onClick="musicstop"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04"/>
 
-        <Button
-            android:id="@+id/stop"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="100dp"
-            android:layout_height="85dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="268dp"
-            android:layout_marginRight="268dp"
-            android:background="@android:drawable/ic_menu_close_clear_cancel"
-            android:onClick="musicstop" />
-    </LinearLayout>
-</LinearLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97"  />
+</androidx.constraintlayout.widget.ConstraintLayout>
